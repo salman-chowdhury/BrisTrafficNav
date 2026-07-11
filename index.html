@@ -3,123 +3,195 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Salman Chowdhury — AI, data and software engineering portfolio.">
-  <title>Salman Chowdhury — AI & Data Engineer</title>
+  <meta name="description" content="Salman Chowdhury - AI, data and software engineering portfolio with verified project evidence.">
+  <title>Salman Chowdhury | AI and Data Engineer</title>
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <nav>
-      <a class="brand" href="#top">SC</a>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+  <header class="hero" id="top">
+    <nav aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="SC, Salman Chowdhury home">SC</a>
       <div class="nav-links">
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#about">About</a>
       </div>
     </nav>
-    <div class="hero-grid" id="top">
-      <div>
-        <p class="eyebrow">AI application engineering · data automation · software systems</p>
-        <h1>Building practical AI systems that can be evaluated, deployed and trusted.</h1>
-        <p class="lede">UQ Master of Information Technology graduate candidate focused on RAG, adaptive inference, analytics, automation and production-oriented software engineering.</p>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">AI application engineering / data automation / software systems</p>
+        <h1>Salman Chowdhury</h1>
+        <p class="hero-role">I build practical AI and data systems with inspectable architecture, reproducible evaluation, and tested delivery.</p>
+        <p class="lede">UQ Master of Information Technology graduate candidate based in Brisbane, working across RAG, local inference, forecasting, analytics, automation, and full-stack software.</p>
         <div class="actions">
-          <a class="primary" href="#projects">View projects</a>
+          <a class="primary" href="#projects">View verified work</a>
           <a class="secondary" href="https://github.com/salman-chowdhury">GitHub profile</a>
+          <button class="resume-placeholder" type="button" disabled>Resume PDF pending</button>
         </div>
       </div>
-      <aside class="snapshot">
-        <h2>Recruiter snapshot</h2>
-        <ul>
-          <li>Python, TypeScript, SQL and React</li>
-          <li>RAG, LLM evaluation and ML pipelines</li>
-          <li>FastAPI, Next.js, Django and GitHub Actions</li>
-          <li>Based in South East Queensland</li>
-        </ul>
-      </aside>
+      <div class="proof-list" aria-label="Engineering focus">
+        <p><strong>Build</strong><span>Python, TypeScript, SQL, React</span></p>
+        <p><strong>Evaluate</strong><span>RAG metrics, rolling forecasts, executable tests</span></p>
+        <p><strong>Deliver</strong><span>FastAPI, Next.js, Django, GitHub Actions</span></p>
+      </div>
     </div>
   </header>
 
   <main>
-    <section id="projects">
+    <section id="projects" aria-labelledby="projects-title">
       <div class="section-heading">
         <p class="eyebrow">Selected work</p>
-        <h2>Systems, not isolated demos</h2>
-        <p>Each project is framed around a real operating problem, technical decisions, verification and measurable outcomes.</p>
+        <h2 id="projects-title">Evidence before adjectives</h2>
+        <p>Each project links to implementation details, measured results, tests, or an actual running interface.</p>
       </div>
-      <div class="filters" aria-label="Project filters">
-        <button class="active" data-filter="all">All</button>
-        <button data-filter="ai">AI systems</button>
-        <button data-filter="data">Data & automation</button>
-        <button data-filter="software">Software</button>
+      <div class="filters" aria-label="Filter projects">
+        <button class="active" data-filter="all" aria-pressed="true">All</button>
+        <button data-filter="ai" aria-pressed="false">AI systems</button>
+        <button data-filter="data" aria-pressed="false">Data and automation</button>
+        <button data-filter="software" aria-pressed="false">Software</button>
       </div>
       <div class="project-grid">
+        <article class="project project-featured" data-category="ai software">
+          <img src="assets/projects/ai-faq-demo.png" alt="AI FAQ Chatbot local demo showing a grounded answer and source references" width="1440" height="900">
+          <div class="project-body">
+            <span class="tag">RAG</span>
+            <h3>AI FAQ Chatbot</h3>
+            <p>Document ingestion, evidence retrieval, grounded answers, administration, and an embeddable support widget.</p>
+            <p class="measure">8-case local evaluation: refusal correctness 1.0; p50 3.83 ms; prompt-injection forbidden terms observed 0.</p>
+            <div class="stack">Next.js / TypeScript / Gemini / Playwright</div>
+            <div class="project-links">
+              <a href="https://ai-faq-chatbot-pwtwv9d9a-salmans-projects-e64a799c.vercel.app">Live app</a>
+              <a href="https://github.com/salman-chowdhury/ai-faq-chatbot/blob/main/evaluation/reports/v1/report.md">Evaluation</a>
+              <a href="https://github.com/salman-chowdhury/ai-faq-chatbot/blob/main/docs/case-study.md">Case study</a>
+            </div>
+          </div>
+        </article>
+
         <article class="project" data-category="ai software">
-          <span class="tag">AI systems</span>
-          <h3>ChowBox</h3>
-          <p>Adaptive local-first inference gateway that selects execution plans under quality, latency, cost and privacy constraints.</p>
-          <div class="stack">FastAPI · Python · routing · telemetry · CI</div>
-          <a href="https://github.com/salman-chowdhury/ChowBox">Repository →</a>
+          <div class="project-body">
+            <span class="tag">Local inference</span>
+            <h3>ChowBox</h3>
+            <p>OpenAI-compatible local inference gateway with a streaming Ollama backend, transparent routing, exact caching, and request telemetry.</p>
+            <p class="measure">24 local requests across four strategies, with observed TTFT, token counts, routing, escalation, cache behavior, and outcomes.</p>
+            <div class="stack">FastAPI / Python / Ollama / telemetry</div>
+            <div class="project-links">
+              <a href="https://github.com/salman-chowdhury/portfolio/blob/main/evidence/chowbox.md">Public evidence</a>
+            </div>
+          </div>
         </article>
-        <article class="project" data-category="ai software">
-          <span class="tag">RAG</span>
-          <h3>AI FAQ Chatbot</h3>
-          <p>Document and website ingestion, retrieval, grounded responses, citations, administration and embeddable support widget.</p>
-          <div class="stack">Next.js · TypeScript · Gemini · Playwright</div>
-          <a href="https://github.com/salman-chowdhury/ai-faq-chatbot">Repository →</a>
+
+        <article class="project" data-category="ai data">
+          <div class="project-body">
+            <span class="tag">Evaluation</span>
+            <h3>LLM Evaluation Toolkit</h3>
+            <p>Provider-agnostic JSONL evaluation for retrieval, citations, grounding, refusal behavior, latency, tokens, and cost records.</p>
+            <p class="measure">4 deterministic tests pass; CI passes. Merge remains protected by an independent-review requirement.</p>
+            <div class="stack">Python / JSONL / pytest / CI</div>
+            <div class="project-links">
+              <a href="https://github.com/salman-chowdhury/llm-evaluation-toolkit/pull/2">Review PR</a>
+              <a href="https://github.com/salman-chowdhury/llm-evaluation-toolkit/tree/agent/build-llm-evaluation-toolkit">Source branch</a>
+            </div>
+          </div>
         </article>
-        <article class="project" data-category="data">
-          <span class="tag">Automation</span>
-          <h3>Web to Sheets</h3>
-          <p>Configurable extraction pipeline with validation, deduplication, ethical guardrails, logging and Google Sheets delivery.</p>
-          <div class="stack">Python · APIs · pytest · GitHub Actions</div>
-          <a href="https://github.com/salman-chowdhury/web-to-sheets">Repository →</a>
-        </article>
+
         <article class="project" data-category="data ai">
-          <span class="tag">Machine learning</span>
-          <h3>Deep Learning Forecasting</h3>
-          <p>Leakage-safe chronological forecasting pipeline with recurrent models, automated tests and reproducible experiment artifacts.</p>
-          <div class="stack">PyTorch · pandas · scikit-learn · CI</div>
-          <a href="https://github.com/salman-chowdhury/DL_stock_pred">Repository →</a>
+          <div class="project-body">
+            <span class="tag">Forecasting</span>
+            <h3>DL Stock Prediction</h3>
+            <p>Chronological forecasting pipeline with recurrent models and rolling persistence, moving-average, linear, and tree baselines.</p>
+            <p class="measure">95 rolling test observations per index; persistence had the lowest MAE on all three datasets.</p>
+            <div class="stack">PyTorch / pandas / scikit-learn / CI</div>
+            <div class="project-links">
+              <a href="https://github.com/salman-chowdhury/DL_stock_pred">Repository</a>
+              <a href="https://github.com/salman-chowdhury/DL_stock_pred/blob/main/evaluation/baselines-v1/report.md">Baseline report</a>
+              <a href="https://github.com/salman-chowdhury/DL_stock_pred/blob/main/docs/case-study.md">Case study</a>
+            </div>
+          </div>
         </article>
-        <article class="project" data-category="data software">
-          <span class="tag">Analytics</span>
-          <h3>Asset Insights</h3>
-          <p>Reproducible council infrastructure analytics covering condition, maintenance backlog, renewal priorities and geographic risk.</p>
-          <div class="stack">SQL · Python · reporting · data quality</div>
-          <a href="https://github.com/salman-chowdhury/asset-insights-dashboard">Repository →</a>
+
+        <article class="project" data-category="data">
+          <div class="project-body">
+            <span class="tag">Automation</span>
+            <h3>Web to Sheets</h3>
+            <p>Configurable extraction pipeline with validation, deduplication, ethical guardrails, logs, and Google Sheets delivery.</p>
+            <p class="measure">22 tests pass; the documented local demo writes 10 validated records.</p>
+            <div class="stack">Python / APIs / pytest / GitHub Actions</div>
+            <div class="project-links">
+              <a href="https://github.com/salman-chowdhury/web-to-sheets">Repository</a>
+              <a href="https://github.com/salman-chowdhury/web-to-sheets/blob/main/docs/case-study.md">Case study</a>
+            </div>
+          </div>
         </article>
-        <article class="project" data-category="software">
-          <span class="tag">Business systems</span>
-          <h3>Council Workflow Demo</h3>
-          <p>Typed service-request workflow with intake, triage, status transitions, validation and audit history.</p>
-          <div class="stack">React · TypeScript · workflow design</div>
-          <a href="https://github.com/salman-chowdhury/council-request-workflow-demo">Repository →</a>
+
+        <article class="project project-wide" data-category="data software">
+          <div class="project-body">
+            <span class="tag">Analytics</span>
+            <h3>Asset Insights</h3>
+            <p>Reproducible council infrastructure analytics for condition, maintenance backlog, renewal priorities, and geographic risk.</p>
+            <p class="measure">Deterministic rebuild validated six populated analytics outputs from committed source data.</p>
+            <div class="stack">SQL / Python / reporting / data quality</div>
+            <div class="project-links">
+              <a href="https://github.com/salman-chowdhury/asset-insights-dashboard">Repository</a>
+              <a href="https://github.com/salman-chowdhury/asset-insights-dashboard/blob/main/docs/case-study.md">Case study</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-featured" data-category="software">
+          <img src="assets/projects/trainforge-dashboard.png" alt="TrainForge trainer dashboard with upcoming sessions and summary counts" width="1440" height="900">
+          <div class="project-body">
+            <span class="tag">Workflow software</span>
+            <h3>TrainForge</h3>
+            <p>Django scheduling workflow with seeded demo data, trainer and administrator roles, and appointment management.</p>
+            <p class="measure">Fresh migrations and seed completed; 7 application tests pass.</p>
+            <div class="stack">Django / Python / SQLite / pytest</div>
+            <div class="project-links">
+              <a href="https://github.com/salman-chowdhury/portfolio/blob/main/evidence/trainforge.md">Public evidence</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-featured" data-category="software">
+          <img src="assets/projects/council-workflow.png" alt="Council request workflow dashboard with service request metrics and table" width="1440" height="900">
+          <div class="project-body">
+            <span class="tag">Business systems</span>
+            <h3>Council Workflow Demo</h3>
+            <p>Typed service-request workflow with intake, triage, validation, status transitions, and audit history.</p>
+            <p class="measure">Typecheck and production build pass; actual desktop, admin, audit, and mobile views captured.</p>
+            <div class="stack">React / TypeScript / workflow design</div>
+            <div class="project-links">
+              <a href="https://github.com/salman-chowdhury/council-request-workflow-demo">Repository</a>
+              <a href="https://github.com/salman-chowdhury/council-request-workflow-demo/blob/main/docs/case-study.md">Case study</a>
+            </div>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="skills" class="split">
+    <section id="skills" class="split" aria-labelledby="skills-title">
       <div>
         <p class="eyebrow">Capabilities</p>
-        <h2>Engineering across the AI lifecycle</h2>
+        <h2 id="skills-title">Across the delivery path</h2>
       </div>
       <div class="skill-grid">
-        <div><strong>AI & ML</strong><span>RAG, embeddings, evaluation, PyTorch, retrieval, adaptive inference</span></div>
-        <div><strong>Data</strong><span>SQL, pandas, ETL, validation, analytics, dashboard-ready reporting</span></div>
+        <div><strong>AI and ML</strong><span>RAG, embeddings, evaluation, PyTorch, retrieval, local inference</span></div>
+        <div><strong>Data</strong><span>SQL, pandas, ETL, validation, analytics, reporting</span></div>
         <div><strong>Software</strong><span>Python, TypeScript, React, Next.js, FastAPI, Django</span></div>
-        <div><strong>Delivery</strong><span>Testing, CI/CD, Docker, observability, documentation, security reviews</span></div>
+        <div><strong>Delivery</strong><span>Testing, CI/CD, Docker, observability, documentation, security review</span></div>
       </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="about" aria-labelledby="about-title">
       <p class="eyebrow">About</p>
-      <h2>I focus on evidence, not labels.</h2>
-      <p>My strongest work combines model or LLM capability with conventional engineering: data pipelines, tests, deployment, evaluation, security controls and business-facing outputs. I am targeting graduate and junior roles in AI engineering, machine learning, data engineering, analytics engineering and software development.</p>
+      <h2 id="about-title">Engineering claims should be reproducible.</h2>
+      <p>My strongest work combines model or LLM capability with conventional engineering: data pipelines, tests, deployment, evaluation, security controls, and business-facing outputs. I am targeting graduate and junior roles in AI engineering, machine learning, data engineering, analytics engineering, and software development.</p>
     </section>
   </main>
 
-  <footer>
-    <span>Salman Chowdhury</span>
+  <footer id="contact">
+    <span>Salman Chowdhury / Brisbane, Australia</span>
     <a href="https://github.com/salman-chowdhury">github.com/salman-chowdhury</a>
   </footer>
   <script src="script.js"></script>
