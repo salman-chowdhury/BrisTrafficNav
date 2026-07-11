@@ -23,8 +23,6 @@ Then visit `http://localhost:8000`.
 
 ## Deployment
 
-After this work is merged, enable GitHub Pages with **GitHub Actions** as the source in repository settings. Pushes to `main` will then deploy the static site automatically.
+GitHub Pages deploys the site from `main` through the repository's Actions workflow:
 
-## Repository name
-
-This repository was an empty placeholder and is being repurposed. Rename it to a recruiter-friendly name such as `portfolio` or `salman-chowdhury` when repository settings are available.
+https://salman-chowdhury.github.io/portfolio/
