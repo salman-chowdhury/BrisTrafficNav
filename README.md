@@ -4,7 +4,7 @@ A lightweight recruiter-facing portfolio site presenting selected AI, data, auto
 
 ![Portfolio desktop view](screenshots/portfolio-desktop.png)
 
-[Architecture, trade-offs, validation, and limitations](docs/case-study.md)
+[Architecture, trade-offs, validation, and limitations](docs/case-study.md) · [AI contributor handoff and future roadmap](docs/PORTFOLIO_ROADMAP.md)
 
 ## Features
 
